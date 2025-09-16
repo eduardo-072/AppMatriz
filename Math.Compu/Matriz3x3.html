@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Matrizes - MatrixCalc</title>
+    <link rel="stylesheet" href="Matriz3x3.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">MatrixCalc</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#" style="background: linear-gradient(45deg, #667eea, #764ba2); color: white;">Calculadora</a></li>
+                <li><a href="operations.html">Operações</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <div class="calculator-card">
+            <h1 class="title">Calculadora de Matrizes 3x4</h1>
+            
+            <div class="matriz-container">
+                <div class="matriz-label">Digite os valores da matriz (Sistema Linear):</div>
+                <div class="matriz-grid" id="matrizGrid">
+                    <!-- Os inputs serão gerados pelo JavaScript -->
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="btn" id="calcularBtn">🧮 Calcular Sistema</button>
+                <button class="btn btn-secondary" id="limparBtn">🗑️ Limpar Valores</button>
+            </div>
+
+            <div class="loading" id="loading">
+                Calculando sistema linear...
+            </div>
+
+            <div class="resultado-container" id="resultadoContainer">
+                <div class="resultado-title">✅ Solução do Sistema Linear</div>
+                <div class="resultado-valores">
+                    <div class="resultado-item">
+                        <div class="label">X =</div>
+                        <div class="valor" id="valorX">0</div>
+                    </div>
+                    <div class="resultado-item">
+                        <div class="label">Y =</div>
+                        <div class="valor" id="valorY">0</div>
+                    </div>
+                    <div class="resultado-item">
+                        <div class="label">Z =</div>
+                        <div class="valor" id="valorZ">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
